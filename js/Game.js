@@ -74,13 +74,7 @@ class Game {
                   cars[index - 1].shapeColor = "red";
                   camera.position.x = displayWidth/2;
                   camera.position.y = cars[index-1].y
-                }
-               
-              }
-        
-            }
-        
-            
+                }}}
             if(player.distance < 2150){
               if(keyIsDown(38) && player.index !== null){
                   yVel += 0.9;
@@ -98,7 +92,6 @@ class Game {
                   xVel *= 0.985;
               }
             }
-        
           //move the car
           player.distance += yVel;
           yVel *= 0.98;
